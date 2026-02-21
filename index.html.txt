@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium OTT Lifetime Access</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--gold:#ffcc00;
+--gold-gradient:linear-gradient(135deg,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+height:100%;
+overflow:hidden;
+font-family:'Poppins',sans-serif;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+radial-gradient(circle at 0% 50%, rgba(191,149,63,0.4), transparent 60%),
+radial-gradient(circle at 100% 50%, rgba(191,149,63,0.4), transparent 60%),
+#050505;
+}
+
+/* Mobile-first scaling wrapper */
+.scale-wrapper{
+width:100%;
+max-width:480px;
+padding:18px;
+}
+
+/* Auto scale for short height phones */
+@media (max-height:720px){
+.scale-wrapper{transform:scale(0.92);}
+}
+@media (max-height:650px){
+.scale-wrapper{transform:scale(0.85);}
+}
+
+.container{
+text-align:center;
+}
+
+/* Logo */
+.logo{
+width:90px;
+height:90px;
+margin:0 auto 18px;
+border-radius:50%;
+padding:3px;
+background:var(--gold-gradient);
+}
+
+.logo img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #000;
+}
+
+/* Heading */
+h1{
+font-family:'Cinzel',serif;
+font-size:clamp(1.6rem,6vw,2.2rem);
+background:var(--gold-gradient);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:6px;
+}
+
+.team-tag{
+font-size:0.7rem;
+letter-spacing:3px;
+opacity:0.8;
+margin-bottom:20px;
+}
+
+/* Glass Panel */
+.glass-panel{
+background:rgba(0,0,0,0.65);
+border:1px solid rgba(255,255,255,0.1);
+padding:20px;
+border-radius:22px;
+margin-bottom:28px;
+}
+
+.glass-panel p{
+font-size:0.85rem;
+line-height:1.6;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+margin-top:15px;
+border-top:1px solid rgba(255,255,255,0.1);
+padding-top:12px;
+}
+
+.stat-item b{
+color:var(--gold);
+font-size:1rem;
+}
+
+.stat-item p{
+font-size:0.6rem;
+opacity:0.6;
+}
+
+/* ANIMATED BUTTON */
+.btn-telegram{
+display:block;
+width:100%;
+padding:22px;
+font-size:1.1rem;
+font-weight:800;
+color:#000;
+border-radius:60px;
+text-decoration:none;
+background:linear-gradient(120deg,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+background-size:300% 300%;
+animation:shineMove 4s ease infinite, floatMove 3s ease-in-out infinite;
+box-shadow:0 20px 45px rgba(179,135,40,0.6);
+position:relative;
+}
+
+/* Shine animation */
+@keyframes shineMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Subtle floating */
+@keyframes floatMove{
+0%{transform:translateY(0);}
+50%{transform:translateY(-4px);}
+100%{transform:translateY(0);}
+}
+
+.footer{
+margin-top:18px;
+font-size:0.7rem;
+opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="scale-wrapper">
+<div class="container">
+
+<div class="logo">
+<img src="https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456">
+</div>
+
+<h1>Lifetime OTT Access – ₹499</h1>
+<div class="team-tag">PRIVATE PREMIUM MEMBERSHIP</div>
+
+<div class="glass-panel">
+<p>
+Access in <b>Original Official Apps</b><br><br>
+✔ No Shared Accounts<br>
+✔ Your Own Independent Login<br>
+✔ 4K Ultra HD Supported<br>
+✔ Works on TV, Mobile & Laptop
+</p>
+
+<div class="stats">
+<div class="stat-item">
+<b>Private</b>
+<p>Access</p>
+</div>
+<div class="stat-item">
+<b>4K UHD</b>
+<p>Quality</p>
+</div>
+<div class="stat-item">
+<b>No Sharing</b>
+<p>Guaranteed</p>
+</div>
+</div>
+</div>
+
+<a href="https://t.me/+9sTDnUgQ6JlkYmM1"
+class="btn-telegram"
+onclick="fbq('track','Lead');">
+Join Official Telegram Access
+</a>
+
+<div class="footer">
+Netflix • Prime • SonyLIV • ZEE5 • Apple TV+ • 30+ Platforms
+</div>
+
+</div>
+</div>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=true;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1207735644804675');
+fbq('track', 'PageView');
+</script>
+
+</body>
+</html>
